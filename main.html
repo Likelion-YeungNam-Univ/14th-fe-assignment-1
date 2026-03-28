@@ -1,15 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FE 1주차 과제</title>
+    <link rel="stylesheet" href="main.css" />
   </head>
   <body>
+    <form action="#" method="post">
+      <div id="main-body">
+        <div id="main-left">
+          <div id="header">
+            <img
+              src="YU_LikeLion.png"
+              id="header-like-lion-logo"
+              alt="멋쟁이사자처럼 영남대 로고"
+            />
 
+            <h2 id="header-content">
+              영남대학교 <br />
+              멋쟁이사자처럼 <br />
+              14기
+            </h2>
+          </div>
 
+          <div id="content">
+            <p>여러분을 진심으로 환영합니다!</p>
+            <br />
+            <p>
+              멋쟁이사자처럼은 성장 의지를 가진 사람들을 돕기 위해 존재합니다.
+              그리고 이들을 돕기 위한 가장 근본적으고 효과적인 방법은 교육이라고
+              생각합니다!
+            </p>
+          </div>
 
-    
+          <div id="dept-select">
+            <input type="radio" value="pd" id="pd" name="dept" checked />
+            <label for="pd">P&D</label>
+
+            <input type="radio" value="fe" id="fe" name="dept" />
+            <label for="fe">FE</label>
+
+            <input type="radio" value="be" id="be" name="dept" />
+            <label for="be">BE</label>
+          </div>
+        </div>
+
+        <div id="main-right">
+          <h3>LOGIN</h3>
+          <div id="input-container">
+            <div class="input-container-class">
+              <img src="images/login.png" alt="로그인 이미지" />
+              <input
+                type="text"
+                id="username"
+                placeholder="username"
+                name="username"
+              />
+            </div>
+
+            <div class="input-container-class">
+              <img src="images/password.png" alt="비밀번호 이미지" />
+              <input
+                type="password"
+                id="password"
+                placeholder="password"
+                name="password"
+              />
+            </div>
+          </div>
+
+          <button type="submit" id="submit">로그인</button>
+        </div>
+      </div>
+    </form>
   </body>
 </html>
 
