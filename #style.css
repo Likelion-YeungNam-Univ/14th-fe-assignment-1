@@ -1,0 +1,26 @@
+p {
+	 color: white;
+}
+
+.login-box{
+    background: navy;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+.login-box input[type="text"]{
+    width: 100%;
+    padding: 40px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.login-box button{
+    width: 100%;
+    padding: 10px;
+    background: orange;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
