@@ -1,0 +1,173 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #a3a3a3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  background-color: #5b5b5b;
+  border-radius: 15px;
+  border: 2px solid #000000;
+  padding: 20px 40px;
+
+  display: flex; /* 왼쪽 섹션, 오른쪽 섹션 가로로 눕히기 */
+  align-items: center;
+  gap: 50px; /* 가로 사이 간격 */
+}
+
+.left-section {
+  flex: 1;
+  color: white;
+} 
+
+.left-box-text{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.left-box-text img
+{
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #5b5b5b;
+}
+
+.intro {
+  color:#b0b0b0;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.description {
+  color: #b0b0b0;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: justify; /* 양쪽 정렬 글이 알맞게 떨어진다.*/
+  margin-bottom: 20px;
+}
+
+/* 기본 라디오버튼 숨기기 */
+.track input[type="radio"]{
+  display: none;
+}
+
+.track {
+  display: flex;
+  gap: 10px;
+}
+
+.radio-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex: 1;
+  height: 80px;
+
+  background-color: #ffffff;
+  color:#000000;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer; /* 마우스 올렸을 때 손가락 모양 */
+}
+
+.track input[type="radio"]:checked + .radio-btn {
+  background-color: #f39c12;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.login-section {
+  background-color: #121526;
+  width: 100%;
+  padding: 20px 15px;
+  border-radius: 20px;  
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4); /* 그림자 넣기 */
+}
+
+.login-section h2 {
+  color: #ffffff;
+  text-align: center; 
+  font-style: italic;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* 요소들을 위에서 아래로 정렬*/
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.login-form input {
+  border-radius: 25px;
+  border: none;
+  padding: 10px;
+  width: 80%;
+  font-size: 15px;
+}
+
+.submit-btn {
+  height: 40px;
+  width: 100%;
+  background-color: #f39c12;
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+@media (max-width: 780px) {
+  .container {
+    flex-direction: column; 
+    padding: 30px 20px;     
+    gap: 30px;             
+  }
+
+  .left-section, .right-section {
+    width: 100%;            
+    flex: none;
+  }
+
+  .left-box-text {
+    flex-direction: column;
+    justify-content: center; /*  모바일에선 중앙으로 */
+    text-align: center;
+    gap: 10px;
+  }
+
+  .description, .intro {
+    text-align: center;      /* 설명글 중앙 정렬 */
+  }
+
+  .radio-btn {
+    height: 60px;            
+    font-size: 16px;
+  }
+}
