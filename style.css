@@ -1,0 +1,118 @@
+
+body {
+    margin: 0;
+    background-color: #a9a9a9;
+}
+
+#page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box {
+    width: 660px;
+    height: 336px;
+    /* margin-top: 200px; */
+    background-color: #666666;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 15px;
+}
+
+#left {
+    width: 50%;
+    height: 100%;
+}
+
+#right {
+    width: 45%;
+    height: 70%;
+    background-color:rgb(8, 8, 55);
+    border-radius: 15px;
+}
+
+#left_top {
+    display: flex;
+    gap: 20px;
+}
+
+#left_top > #title {
+    margin: 0;
+    color:white;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 0.8;
+}
+
+#left_middle {
+    font-size: 13px;
+    color:darkturquoise;
+    line-height: 2;
+}
+
+#left_bottom {
+    display:flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+#left_bottom > div {
+    display: flex;
+    width: 105px;
+    height: 70px;
+    background-color:white;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+
+div > #box3 {
+    display: flex;
+    width: 105px;
+    height: 70px;
+    font-size: 20px;
+    background-color:yellow;
+    justify-content: center;
+    color:black;
+    font-weight: bold;
+} 
+
+
+#loginTitle {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+#right > #input_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#input_box > .button {
+    width: 250px;
+    height: 40px;
+    border-radius: 15px;
+    color:white;
+    background-color:yellowgreen;
+}
+
+.text {
+    width: 180px;
+    height: 15px;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 15px;
+}
