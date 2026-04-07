@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+} /* 전체 스타일 초기화 : 내가 설정한 width보다 박스가 더 커지지 않게 */
+
+body {
+  height: 100vh; 
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #929191; 
+}
+
+/* 메인 카드 */
+.login-card {
+  width: 1000px;
+  height: 450px;
+  display: flex;
+  border: 3px solid #000000;
+  border-radius: 20px;
+  padding: 40px;
+  padding-top: 20px; 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
+
+  background-color: #525252; 
+}
+
+/* 왼쪽 섹션 */
+.left-section {
+  flex: 6; /* 왼쪽, 오른쪽 영역 비율 (6:4) */
+  display: flex;
+  flex-direction: column; /* 전체를 3층으로 쌓음 */
+  gap: 10px;
+
+  color: white;
+}
+
+.row-box {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* 1층: 이미지+제목 */
+.profile-header {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.profile-header img {
+  width: 75px;
+}
+
+.profile-header h2 {
+  margin: 0;
+  font-size: 150%;
+  line-height: 1.5;
+  text-align: left;
+  color: white;
+}
+
+/* 2층 */
+.description p {
+  margin: 5px 0;
+  font-size: 115%;
+  line-height: 1.4;
+  color: #aaacaf;
+}
+
+/* 3층  */
+.footer-boxes {
+  display: flex;       
+  flex-direction: row; 
+  gap: 12px;          
+}
+
+.small-box h2 {
+  font-size: 170%;
+  font-weight: 900; 
+  color: #000;
+}
+
+.footer-boxes > .small-box {
+  width: 90%;
+  height: 105px;
+  flex: 1;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffFfff; 
+}
+
+
+.footer-boxes > .small-box:last-child {
+  background-color: rgb(255, 166, 0);
+}
+
+/* 오른쪽 섹션 */
+.right-section {
+  padding: 0;
+  flex: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container h2 {
+  font-style: italic;
+  font-weight: 990;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  color: #ffFfff; 
+}
+
+.login-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0;
+  border-radius: 30px;
+  padding: 25px; 
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  background-color: #000622; 
+}
+
+.login-input {
+  width: 80%;
+  margin-bottom: 12px; 
+  border-radius: 20px;
+  padding: 12px; 
+}
+
+.login-btn {
+  width: 100%;
+  border: 30px;
+  border-radius: 35px;
+  margin-top: 15px;
+  margin-bottom: none;
+  padding: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #fffafa;
+  background-color: rgb(255, 166, 0);
+}
+
+
+@media (max-width: 860px) {
+  .login-card {
+    width: 90%;       
+    height: auto;    
+    flex-direction: column; 
+    padding: 20px;
+  }
+
+  .left-section, .right-section {
+    flex: none;      
+    width: 100%;     
+  }
+
+  .left-section {
+    margin-bottom: 30px; 
+  }
+
+  .footer-boxes {
+    flex-direction: column; 
+    gap: 10px;
+  }
+
+  .footer-boxes > .small-box{
+    width: 100%;     
+    height: 80px;
+    flex: none;     
+  }
+}
