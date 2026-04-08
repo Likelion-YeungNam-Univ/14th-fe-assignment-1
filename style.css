@@ -23,7 +23,7 @@ body {
   justify-self: center;
 }
 
-#header {
+#left-side-header {
   display: flex;
   margin: 20px;
 }
@@ -39,9 +39,9 @@ body {
   font-size: 30px;
 }
 
-#content {
+#left-side-content {
   color: #d6d1cc;
-  font-style: bold;
+  font-weight: bold;
   font-size: 20px;
   margin: 20px;
   padding: 0 25px;
@@ -85,6 +85,7 @@ body {
   justify-content: center; /* 세로 가운데 */
   align-items: center; /* 가로 가운데 */
 }
+
 .login-form h2 {
   color: white;
   text-align: center;
@@ -100,6 +101,11 @@ body {
   padding: 6px;
   border: none;
   margin: 0px 0px 6px 0px;
+}
+
+.login-form-id .icon,
+.login-form-pw .icon {
+  color: #35312d;
 }
 
 .login-btn {
