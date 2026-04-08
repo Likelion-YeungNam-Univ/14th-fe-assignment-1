@@ -5,31 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FE 1주차 과제</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
+    <!-- 전체 컨테이너 -->
     <div class="container">
+      <!--소개-->
       <div class="left-side">
-        <img src="./logo.png" alt="멋쟁이사자처럼 로고" />
-        <h1>영남대학교<br />멋쟁이사자처럼<br />14기</h1>
-        <p>여러분을 진심으로 환영합니다!</p>
-        <p>
-          멋쟁이사자처럼은 성장 의지를 가진 사람들을 돕기 위해 존재합니다.<br />
-          그리고 이들을 돕기 위한 가장 근본적이고 효과적인 방법은 교육이라<br />
-          고 생각합니다!
-        </p>
+        <div id="header">
+          <img src="./logo.png" alt="멋쟁이사자처럼 로고" />
+          <h1>영남대학교<br />멋쟁이사자처럼<br />14기</h1>
+        </div>
+        <div id="content">
+          <p>여러분을 진심으로 환영합니다!</p>
+
+          <p>
+            멋쟁이사자처럼은 성장 의지를 가진 사람들을 돕기 위해 존재합니다.<br />
+            그리고 이들을 돕기 위한 가장 근본적이고 효과적인 방법은 교육이라<br />
+            고 생각합니다!
+          </p>
+        </div>
         <div class="btn-group">
           <button>P&D</button>
           <button>FE</button>
-          <button class="color">BE</button>
+          <button>BE</button>
         </div>
       </div>
-      <div class="right-side">
-        <div>
-          <h2>LOGIN</h2>
+
+      <!-- 로그인 폼 -->
+      <div class="login-form">
+        <h2>LOGIN</h2>
+        <div class="login-form-id">
+          <i class="fa-solid fa-user"></i>
           <input type="text" placeholder="username" />
-          <input type="password" placeholder="password" />
-          <button class="login-btn">로그인</button>
         </div>
+        <div class="login-form-pw">
+          <i class="fa-solid fa-lock"></i>
+          <input type="password" placeholder="password" />
+        </div>
+
+        <button class="login-btn">로그인</button>
       </div>
     </div>
   </body>
