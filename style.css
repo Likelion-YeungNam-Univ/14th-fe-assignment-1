@@ -1,0 +1,118 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  background-color: #c9c9c9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: 40px 80px;
+  background-color: #7c7b7b;
+  display: flex;
+  border-radius: 15px;
+  border: 4px solid black;
+}
+
+.container .login-form {
+  align-self: center;
+  justify-self: center;
+}
+
+#left-side-header {
+  display: flex;
+  margin: 20px;
+}
+
+.left-side img {
+  width: 120px;
+  height: 120px;
+  margin: 25px 30px;
+}
+
+.left-side h1 {
+  color: white;
+  font-size: 30px;
+}
+
+#left-side-content {
+  color: #d6d1cc;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 20px;
+  padding: 0 25px;
+}
+
+.btn-group {
+  display: flex;
+  padding: 20px;
+}
+
+.btn-group button {
+  font-size: 30px;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  width: 170px;
+  height: 110px;
+  margin: 0 10px;
+  padding: 10px 10px;
+  background-color: #f7f4f2;
+  color: black;
+  border-radius: 15px;
+  border: none;
+}
+
+.btn-group button:hover {
+  background-color: #ff9d41;
+  cursor: pointer;
+}
+
+.login-form {
+  width: 270px;
+  height: 220px;
+  margin: auto;
+  background-color: black;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
+  margin: 0px 50px;
+  /*정렬*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 세로 가운데 */
+  align-items: center; /* 가로 가운데 */
+}
+
+.login-form h2 {
+  color: white;
+  text-align: center;
+  margin: 10px 20px 10px 20px;
+  font-style: italic;
+}
+.login-form-id input,
+.login-form-pw input {
+  background-color: white;
+  border-radius: 70px;
+  width: 200px;
+  height: 25px;
+  padding: 6px;
+  border: none;
+  margin: 0px 0px 6px 0px;
+}
+
+.login-form-id .icon,
+.login-form-pw .icon {
+  color: #35312d;
+}
+
+.login-btn {
+  width: 240px;
+  height: 40px;
+  background-color: #ff8f25;
+  color: white;
+  margin-top: 20px;
+  border-radius: 25px;
+}
